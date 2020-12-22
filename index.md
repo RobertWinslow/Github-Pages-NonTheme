@@ -77,10 +77,6 @@ Here's a a [link](http://kramdown.gettalong.org "title text goes here") to the k
 
 Here's an image: ![Title text goes here](nonsense.png)
 
-![Title text goes here](nonsense.png)
-
-Inline code `like this` yeh
-
 Footnotes are notstandard, but included in kramdown [^1].
 
 [^1]: And here is the content of the footnote.
