@@ -1,0 +1,6 @@
+title: Replace this with the title of your website. Just SEO stuff.
+author: YOUR NAME HERE. This only shows up in the meta info for the page. Useful for SEO, but doesn't actually appear in your content.
+description: This is the description that appears in your page's SEO meta gubbins. If you delete this line, github will default to using 
+
+plugins:
+  - jekyll-sitemap
