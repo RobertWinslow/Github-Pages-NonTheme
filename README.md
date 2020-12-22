@@ -6,7 +6,7 @@ This is a template for a "themeless" Github Pages repo. Use this if you just wan
 1. Create a new repo using this one as the template.
 2. Go to the settings of your new repo, scroll down to the Github Pages section, and set the source to Branch:main
 3. Edit the css. Either:
-  - Edit the example.css file or
+  - Edit the `examplestyle.css` file or
   - Change line 6 of `_layouts/default.html` to link to a different css stylesheet.
 4. Edit the `_config.yaml` file to update the meta-info for your site.
 
@@ -45,7 +45,11 @@ These are all sensible features that you probably want most of the time. But aga
 One option is to follow Primer's instructions to modify the layout and add your own supplemental styling.
 That's essentially what I've done here, just with the goal of completely stripping everything out.
 
-The `_layouts/default.html` file contains a liquid layout that does absolutely nothing to the page content except adding a title, and loading a css file. (`example.css` by default). It also contains some `<meta>` tags that add info which helps search engines and social media parse the page, but strictly speaking, that chunk doesn't need to be there.
+The `_layouts/default.html` file contains a liquid layout that does absolutely nothing to the page content except adding a title, and loading a css file. (`examplestyle.css` by default). It also contains some `<meta>` tags that add info which helps search engines and social media parse the page, but strictly speaking, that chunk doesn't need to be there.
+
+
+---
+
 
 
 
