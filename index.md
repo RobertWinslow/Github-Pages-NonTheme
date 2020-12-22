@@ -50,11 +50,9 @@ Just for good measure, here's a pile of markdown  so you can easily test out you
 
 ## Text Elements
 
-Here's some **strong bold text** and here's some *emphasized italic text*.
+Here's some **strong bold text** and here's some *emphasized italic text*. Here's ***some that's both***.
 
-Here's a a [link](http://kramdown.gettalong.org "title text goes here") to the kramdown homepage, which has more documentation on how this markdown is parsed. (Kramdown works slightly differently than github-flavored markdown.)
-
-Links can also be defined via references like this: A link to the [kramdown hp].
+Here's a a [link](http://kramdown.gettalong.org "title text goes here") to the kramdown homepage, which has more documentation on how this markdown is parsed. (Kramdown works slightly differently than github-flavored markdown.) Links can also be defined via references like this: A link to the [kramdown hp].
 
 [kramdown hp]: http://kramdown.gettalong.org "hp"
 
@@ -68,12 +66,11 @@ Footnotes are notstandard, but included in kramdown [^1].
 
 [^1]: And here is the content of the footnote.
 
-Abbriviations are also included in kramdown. This is an HTML example.
+Abbreviations are also included in kramdown. This is an HTML example.
 
 *[HTML]: Hyper Text Markup Language
 
-This is <span style="color: red">written *in* red</span>.
-
+If you want some other kind of fancy styling, you'll have to manually put in a span element. This is <span style="color: red">written *in* red</span>.
 This is *red*{: style="color: red"}.
 
 
