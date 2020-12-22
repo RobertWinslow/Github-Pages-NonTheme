@@ -50,7 +50,15 @@ Just for good measure, here's a pile of markdown  so you can easily test out you
 
 ## Text Elements
 
-Here's some **strong bold text** and here's some *emphasized italic text*. Here's ***some that's both***.
+Here's some **strong bold text** and here's some *emphasized italic text*. Here's ***some that's both***. `Inline code looks like this`.
+
+And here's a code block for good measure:
+
+---python
+def eggplant(salt, pepper, water):
+    for drop in water:
+        print(sprinkle(drop))
+---
 
 Here's a a [link](http://kramdown.gettalong.org "title text goes here") to the kramdown homepage, which has more documentation on how this markdown is parsed. (Kramdown works slightly differently than github-flavored markdown.) Links can also be defined via references like this: A link to the [kramdown hp].
 
