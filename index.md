@@ -35,6 +35,8 @@ Just for good measure, here's a pile of markdown  so you can easily test out you
                 - 5 layers deep
 - okay, that's enough of that.
 
+
+
 1. Here's an ordered list
 2. The markdown parser will automatically redo the numbers
 55. This line starts with `55.` in the source file.
@@ -43,6 +45,15 @@ Just for good measure, here's a pile of markdown  so you can easily test out you
         1. Nest 2
             1. Nest 3
     1. Back down to nested level 1.
+
+
+
+Defintion Lists
+: Definition lists are a nonstandard feature of markdown and not supported in Github-flavored markdown. However, they're support in kramdown, and I've found them to be very useful.
+
+Second definition example
+: This is a second example of the definition list elements.
+
 
 
 
@@ -86,6 +97,7 @@ This is *red*{: style="color: red"}.
 
 
 
+
 ## Tables
 
 
@@ -104,7 +116,8 @@ Now here's a table with defined header and footer rows:
 |=====
 | Foot1   | Foot2   | Foot3 |
 
-And here's the same table but with `{: rules="all"}` appended to the end, which Kramdown interprets as a property to put inside the table element.
+And here's the same table but with `{: rules="all"}` appended to the end, which Kramdown interprets as a property to apply to the table element. 
+Huh. Apparently, [the rules attribute is deprecated], but Kramdown uses it in their examples, and I'm just copying those here. So `¯\_(ツ)_/¯`
 
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
@@ -116,4 +129,39 @@ And here's the same table but with `{: rules="all"}` appended to the end, which 
 |=====
 | Foot1   | Foot2   | Foot3
 {: rules="all"}
+
+
+
+
+
+## Math Support
+
+To accomodate pages which display LaTeX equations, Kramdown doesn't parse any elements inside of double dollar signs `$$ $$`, and replaces the dollar signs with `\[ \]`. That way you can drop in a javascript math rendering library and everything will render smoothly.
+
+For example, the following equation won't be rendered by default, but notice how the underscores and asterisk haven't been interpreted as markdown syntax.
+
+$$a_x^2 + b_x^2 = c_{zy}^2 \; \sum_{i=0}^\infty  \; \frac{a_b c_d}{e*f*g}$$
+
+To get this to render, all you have to do is plop in the code for a library like MathJax or KaTeX. 
+
+~~~html
+<!--katex math rendering-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"></script>
+<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		renderMathInElement(document.body, {
+			delimiters: [
+			  {left: "$$", right: "$$", display: true},
+			  {left: "$", right: "$", display: false},
+			  {left: "\\(", right: "\\)", display: false},
+			  {left: "\\[", right: "\\]", display: true}
+			], trust: true,
+		});
+	});
+</script>
+~~~
+
+Just place this in the head in the `_layouts/default.html` file and math will automatically render on all your pages.
 
