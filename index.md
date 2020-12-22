@@ -92,6 +92,8 @@ This is *red*{: style="color: red"}.
 | A simple | table |
 | with multiple | lines|
 
+Now here's a table with defined header and footer rows:
+
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
@@ -102,6 +104,8 @@ This is *red*{: style="color: red"}.
 |=====
 | Foot1   | Foot2   | Foot3 |
 
+And here's the same table but with `{: rules="all"}` appended to the end, which Kramdown interprets as a property to put inside the table element.
+
 | Header1 | Header2 | Header3 |
 |:--------|:-------:|--------:|
 | cell1   | cell2   | cell3   |
@@ -111,5 +115,5 @@ This is *red*{: style="color: red"}.
 | cell4   | cell5   | cell6   |
 |=====
 | Foot1   | Foot2   | Foot3
-{: rules="none"}
+{: rules="all"}
 
