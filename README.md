@@ -19,7 +19,7 @@ These are all sensible features that you probably want most of the time. But aga
 
 ## The solution
 
-One option is to follow Primer's instructions to modify the layout and add your own supplmental styling.
+One option is to follow Primer's instructions to modify the layout and add your own supplemental styling.
 
 That's essentially what I've done here, just with the goal of completely stripping everything out.
 
