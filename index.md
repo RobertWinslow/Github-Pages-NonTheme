@@ -8,8 +8,8 @@ Description: This is the description of the page's contents. It's just metadata.
 This is an example index page. 
 Edit this markdown file to change the homepage of your site.
 
-There's no fancy Jekyll magic to compile an index of your posts, 
-so you'll have to manually link them all like so:
+There's no fancy Jekyll magic to compile a list of your posts, 
+so you'll have to manually link them like so:
 [Here is a link to another page.](example-page)
 
 And here's [an example of a link to a page in a subdirectory](subdirectory-example/hello),
