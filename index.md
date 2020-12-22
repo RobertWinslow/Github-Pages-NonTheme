@@ -11,3 +11,6 @@ Edit this markdown file to change the homepage of your site.
 There's no fancy Jekyll magic to compile an index of your posts, 
 so you'll have to manually link them all like so:
 [Here is a link to another page.](example-page)
+
+And here's [an example of a link to a page in a subdirectory](subdirectory-example/hello),
+showing how Jekyll parses all your markdown files unless they're contained in a folder whose name begins with `_`
