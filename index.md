@@ -75,9 +75,9 @@ Here's a a [link](http://kramdown.gettalong.org "title text goes here") to the k
 
 [kramdown hp]: http://kramdown.gettalong.org "hp"
 
-Here's an image: ![Title text goes here](bigtestimage.png)
+Here's an image: ![Title text goes here](nonsense.png)
 
-![Title text goes here](bigtestimage.png)
+![Title text goes here](nonsense.png)
 
 Inline code `like this` yeh
 
