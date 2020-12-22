@@ -10,11 +10,10 @@
     <!--SEO gubbins-->
     <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}">
     <link rel="canonical" href='{{page.url | replace: "index.html", "" | absolute_url}}'>
-    {% if site.author %}{{"<meta name="author" content='{{site.author}}'>"}}{% else %}{{}}{% endif %}
     
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="{{site.title}}">
-    <meta property="og:title" content="{{page.title}}">
+    <meta property="og:title" content="{{ page.title }} - {{site.title}}">
     <meta property="og:description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}">
 
 </head>
