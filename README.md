@@ -6,8 +6,8 @@ This is a template for a "themeless" Github Pages repo. Use this if you just wan
 1. Create a new repo using this one as the template.
 2. Go to the settings of your new repo, scroll down to the Github Pages section, and set the source to Branch:main
 3. Edit the css. Either:
-  - Edit the `examplestyle.css` file or
-  - Change line 6 of `_layouts/default.html` to link to a different css stylesheet.
+    - Edit the `examplestyle.css` file or
+    - Change line 6 of `_layouts/default.html` to link to a different css stylesheet.
 4. Edit the `_config.yaml` file to update the meta-info for your site.
 
 ## Making new pages.
